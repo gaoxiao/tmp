@@ -1,0 +1,16 @@
+-- create index for MainCategory table
+CREATE INDEX INDEX_MAINCATEGORY_NAME ON MainCategory (mainCategory);
+-- create index for SubCategory table
+CREATE INDEX INDEX_SUBCATEGORY_NAME ON SubCategory (subCategory);
+-- create index for Attribute table
+CREATE INDEX INDEX_ATTRIBUTE ON Attribute (attribute);
+-- create index for YelpUser table
+CREATE INDEX INDEX_USER_MEMBERSINCE ON YelpUser (yelping_since);
+CREATE INDEX INDEX_USER_REVIEWCOUNT ON YelpUser (review_count);
+CREATE INDEX INDEX_USER_STAR ON YelpUser (average_stars);
+CREATE INDEX INDEX_USER_FRIENDS ON YelpUser (friend_count);
+CREATE INDEX INDEX_USER_STAR ON YelpUser (votes);
+-- create index for review table
+CREATE INDEX INDEX_REVIEW_DATE ON REVIEW (review_date);
+CREATE INDEX INDEX_REVIEW_STAR ON REVIEW (stars);
+CREATE INDEX INDEX_REVIEW_VOTE ON REVIEW (votes);

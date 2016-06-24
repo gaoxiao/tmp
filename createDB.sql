@@ -48,7 +48,7 @@ CREATE TABLE Review (
     stars           INTEGER,
     votes           INTEGER,
     PRIMARY KEY (review_id),
-    FOREIGN KEY (business_id) REFERENCES Business
+    FOREIGN KEY (business_id) REFERENCES Business,
     FOREIGN KEY (user_id) REFERENCES YelpUser
 );
 
